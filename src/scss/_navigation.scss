@@ -1,0 +1,142 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include block_991 {
+    display: none;
+  }
+
+  li {
+    margin-right: 56px;
+
+    @include block_1199 {
+      margin-right: 15px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 83%;
+      color: #18243E;
+    }
+  }
+}
+
+.phone-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include block_991 {
+    display: none;
+  }
+
+  .phone-num {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__link {
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 88%;
+      color: #18243E;
+      margin-bottom: 5px;
+    }
+
+    &__get {
+      font-size: 16px;
+      line-height: 94%;
+      color: #000000;
+      border-bottom: #2AD1AB solid 2px;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+.lang-dropdown {
+  @include block_991 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  a {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 97%;
+    color: #18243E;
+    text-shadow: 0px 1px 5px rgba(28, 42, 92, 0.2);
+    text-transform: uppercase;
+
+    @include block_480 {
+      font-size: 14px;
+    }
+  }
+
+  &-list {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+
+    @include block_991 {
+      right: auto;
+      top: 20px;
+      left: 20px;
+    }
+
+    @include block_480 {
+      left: 15px;
+    }
+
+    li {
+      margin-top: 10px;
+    }
+  }
+}
+
+.lang-dropdown__current {
+  position: relative;
+
+  &:hover {
+    .lang-dropdown-list {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.burger__btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+
+  @include block_991 {
+    display: flex;
+  }
+}
+
+.logo-wrapper {
+  @include block_480 {
+    max-width: 66px;
+  }
+}

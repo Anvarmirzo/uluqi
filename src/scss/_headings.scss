@@ -1,0 +1,10 @@
+h1 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 122%;
+  color: #18243E;
+
+  @include block_767 {
+    font-size: 23px;
+  }
+}

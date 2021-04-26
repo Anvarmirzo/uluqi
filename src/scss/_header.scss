@@ -1,0 +1,84 @@
+.header {
+  overflow-x: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -80px;
+    content: 'U';
+    font-weight: 900;
+    font-size: 660px;
+    line-height: 114%;
+    color: #2AD1AB;
+    opacity: 0.1;
+  }
+
+  @include block_767 {
+    text-align: center;
+  }
+
+  &__container {
+    margin-top: 93px;
+
+    @include block_767 {
+      margin-top: 21px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 18px;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 133%;
+    color: #18243E;
+    margin-bottom: 65px;
+
+    @include block_991 {
+      margin-bottom: 34px;
+    }
+
+    @include block_767 {
+      font-size: 16px;
+    }
+  }
+
+  .d-flex {
+    @include block_767 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .get-price {
+    max-width: 291px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 127%;
+    color: #18243E;
+
+    @include block_767 {
+      font-size: 16px;
+    }
+  }
+
+  .price-btn {
+    @include block_767 {
+      margin-bottom: 24px;
+      padding-right: 57px;
+    }
+  }
+
+  &-img {
+    @include block_991 {
+      text-align: center;
+      margin-bottom: 55px;
+
+      img {
+        max-width: 209px;
+      }
+    }
+  }
+}

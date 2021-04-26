@@ -1,0 +1,50 @@
+.phone-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/call.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.arrow-down {
+  display: inline-block;
+  width: 15px;
+  height: 8px;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include block_480 {
+    width: 10px;
+    height: 6px;
+    margin-top: 0;
+  }
+}
+
+.arrow-right-icon {
+  display: inline-block;
+  height: 12px;
+  width: 25px;
+  background-image: url(../img/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include block_767 {
+    width: 16px;
+    height: 8px;
+  }
+}
+
+.burger-icon {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/icons/burger-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

@@ -53,11 +53,17 @@ html {
   }
 }
 
-@media (min-width: 1520px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1480px;
+    max-width: 1200px;
   }
 }
+
+// @media (min-width: 1520px) {
+//   .container {
+//     max-width: 1480px;
+//   }
+// }
 
 .container-fluid {
   width: 100%;
