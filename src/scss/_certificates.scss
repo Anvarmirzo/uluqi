@@ -1,0 +1,42 @@
+.certificates {
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 152%;
+    color: #18243E;
+
+    @include block_767 {
+      font-size: 16px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    height: 100%;
+
+    p {
+      font-weight: bold;
+      font-size: 29px;
+      line-height: 135%;
+      color: #18243E;
+
+      @include block_767 {
+        font-size: 19px;
+
+      }
+    }
+
+    img {
+      box-shadow: 0 0 20px 5px #0000002e;
+      margin-bottom: 23px;
+
+      @include custom-media(400px) {
+        box-shadow: 0 0 5px 0px #000;
+      }
+    }
+  }
+}

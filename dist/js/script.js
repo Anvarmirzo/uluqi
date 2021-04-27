@@ -74,5 +74,37 @@ document.addEventListener('DOMContentLoaded', function (event) {
       }
     }
   });
+  /* Certificates Swiper */
+
+  var certificatesSwiper = new Swiper('.certificates .swiper-container', {
+    spaceBetween: 10,
+    loop: false,
+    centerMode: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets'
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 1
+      },
+      991: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 3
+      }
+    }
+  });
   ;
 });

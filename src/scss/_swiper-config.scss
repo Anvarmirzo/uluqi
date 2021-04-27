@@ -39,3 +39,46 @@
     }
   }
 }
+
+.certificates {
+  .swiper-container {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: -30px;
+    margin-bottom: -40px;
+  }
+
+  .swiper-pagination {
+    opacity: 0;
+    visibility: hidden;
+
+    @include block_1199 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &-bullet {
+      background-color: #2AD1AB;
+
+      &-active {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    opacity: 0;
+    visibility: hidden;
+
+    @include block_1199 {
+      opacity: 1;
+      visibility: visible;
+      z-index: 111;
+    }
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.2 !important;
+}

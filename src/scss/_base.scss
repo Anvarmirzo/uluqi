@@ -115,6 +115,14 @@ section {
     margin-bottom: 49px;
 }
 
+.mb-77 {
+    margin-bottom: 77px;
+
+    @include block_767 {
+        margin-bottom: 30px;
+    }
+}
+
 .mt-74 {
     margin-top: 74px;
 }

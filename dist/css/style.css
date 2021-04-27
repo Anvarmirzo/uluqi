@@ -783,6 +783,10 @@ section {
   margin-bottom: 49px;
 }
 
+.mb-77 {
+  margin-bottom: 77px;
+}
+
 .mt-74 {
   margin-top: 74px;
 }
@@ -1198,6 +1202,38 @@ h2 {
   transform: scale(1.5);
 }
 
+.certificates .swiper-container {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-top: -30px;
+  margin-bottom: -40px;
+}
+
+.certificates .swiper-pagination {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.certificates .swiper-pagination-bullet {
+  background-color: #2AD1AB;
+}
+
+.certificates .swiper-pagination-bullet-active {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.certificates .swiper-button-next,
+.certificates .swiper-button-prev {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-button-disabled {
+  opacity: 0.2 !important;
+}
+
 .founder h2 {
   margin-bottom: 37px;
 }
@@ -1260,6 +1296,35 @@ h2 {
   line-height: 117%;
   text-align: center;
   color: #18243E;
+}
+
+.certificates h2 {
+  margin-bottom: 24px;
+}
+
+.certificates p {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 152%;
+  color: #18243E;
+}
+
+.certificates__item {
+  text-align: center;
+  height: 100%;
+}
+
+.certificates__item p {
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 135%;
+  color: #18243E;
+}
+
+.certificates__item img {
+  -webkit-box-shadow: 0 0 20px 5px #0000002e;
+  box-shadow: 0 0 20px 5px #0000002e;
+  margin-bottom: 23px;
 }
 
 @media (min-width: 576px) {
@@ -1821,6 +1886,18 @@ h2 {
   .header-menu li {
     margin-right: 15px;
   }
+
+  .certificates .swiper-pagination {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .certificates .swiper-button-next,
+  .certificates .swiper-button-prev {
+    opacity: 1;
+    visibility: visible;
+    z-index: 111;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1902,6 +1979,10 @@ h2 {
 
   .me-57 {
     margin-right: 0px;
+  }
+
+  .mb-77 {
+    margin-bottom: 30px;
   }
 
   .mb-md-26 {
@@ -2054,6 +2135,14 @@ h2 {
     font-size: 18px;
     margin-bottom: 32px;
   }
+
+  .certificates p {
+    font-size: 16px;
+  }
+
+  .certificates__item p {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 480.98px) {
@@ -2077,5 +2166,12 @@ h2 {
 
   .design-end--flex img {
     max-width: 74%;
+  }
+}
+
+@media (max-width: 400px) {
+  .certificates__item img {
+    -webkit-box-shadow: 0 0 5px 0px #000;
+    box-shadow: 0 0 5px 0px #000;
   }
 }
