@@ -1,6 +1,10 @@
 .catalog {
   h2 {
     margin-bottom: 15px;
+
+    @include block_767 {
+      margin-bottom: 10px;
+    }
   }
 
   &-item {
@@ -24,6 +28,16 @@
       line-height: 136%;
       color: #18243E;
       margin-bottom: 28px;
+
+      @include block_767 {
+        font-size: 18px;
+      }
+    }
+
+    .price-btn {
+      @include block_767 {
+        font-size: 18px;
+      }
     }
   }
 }

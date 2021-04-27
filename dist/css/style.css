@@ -1715,6 +1715,10 @@ h2 {
     font-size: 23px;
   }
 
+  h2 {
+    font-size: 25px;
+  }
+
   .header {
     text-align: center;
   }
@@ -1748,6 +1752,18 @@ h2 {
 
   .price-btn {
     font-size: 13px;
+  }
+
+  .catalog h2 {
+    margin-bottom: 10px;
+  }
+
+  .catalog-item h3 {
+    font-size: 18px;
+  }
+
+  .catalog-item .price-btn {
+    font-size: 18px;
   }
 }
 
