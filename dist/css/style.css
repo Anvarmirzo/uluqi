@@ -1172,6 +1172,18 @@ h2 {
   height: auto;
 }
 
+.founder h2 {
+  margin-bottom: 37px;
+}
+
+.founder p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 173%;
+  color: #18243E;
+  margin-bottom: 33px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -1798,6 +1810,10 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
   }
+
+  .founder {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1922,6 +1938,20 @@ h2 {
   .about p.about__description {
     margin-top: 0;
     font-size: 16px;
+  }
+
+  .founder img {
+    max-width: 231px;
+    margin-bottom: 46px;
+  }
+
+  .founder h2 {
+    margin-bottom: 20px;
+  }
+
+  .founder p {
+    font-size: 16px;
+    text-align: left;
   }
 }
 

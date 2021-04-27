@@ -1,0 +1,33 @@
+.founder {
+  @include block_991 {
+    text-align: center;
+  }
+
+  img {
+    @include block_767 {
+      max-width: 231px;
+      margin-bottom: 46px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 37px;
+
+    @include block_767 {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 173%;
+    color: #18243E;
+    margin-bottom: 33px;
+
+    @include block_767 {
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+}
