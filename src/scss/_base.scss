@@ -111,6 +111,35 @@ section {
     margin-bottom: 41px;
 }
 
+.mb-49 {
+    margin-bottom: 49px;
+}
+
+.mt-74 {
+    margin-top: 74px;
+}
+
+.mb-md-26 {
+    @include block_767 {
+        margin-bottom: 26px;
+    }
+}
+
+.mb-md-34 {
+    @include block_767 {
+        margin-bottom: 34px;
+    }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-block {
+    display: block;
+}
+
 .anim-arrow-right {
     position: relative;
 
@@ -165,10 +194,18 @@ section {
 
 .text-start {
     text-align: left;
+
+    @include block_767 {
+        text-align: center;
+    }
 }
 
 .text-end {
     text-align: right;
+
+    @include block_767 {
+        text-align: center;
+    }
 }
 
 .text-center {
@@ -189,6 +226,18 @@ section {
 
 .hidden-from-lg {
     @media(min-width:992px) {
+        display: none;
+    }
+}
+
+.hidden-to-md {
+    @include block_767 {
+        display: none;
+    }
+}
+
+.hidden-from-md {
+    @media(min-width:767.98px) {
         display: none;
     }
 }

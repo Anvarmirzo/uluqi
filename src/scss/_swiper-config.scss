@@ -1,0 +1,11 @@
+.partners-slider {
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+}

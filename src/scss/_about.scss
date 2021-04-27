@@ -2,6 +2,10 @@
   &-item {
     img {
       margin-bottom: 13px;
+
+      @include block_767 {
+        max-width: 32px;
+      }
     }
   }
 
@@ -11,10 +15,19 @@
     line-height: 125%;
     color: #18243E;
 
+    @include block_767 {
+      font-size: 16px;
+    }
+
     &.about__description {
       margin-top: 73px;
       font-size: 25px;
       line-height: 152%;
+
+      @include block_767 {
+        margin-top: 0;
+        font-size: 16px;
+      }
     }
   }
 
@@ -22,5 +35,6 @@
     background-image: linear-gradient(180deg, #2AD1AB 62.5%, #6F72D9 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 700;
   }
 }
