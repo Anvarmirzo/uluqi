@@ -1,0 +1,9 @@
+.feedback {
+  h2 {
+    margin-bottom: 40px;
+
+    @include block_767 {
+      margin-bottom: 15px;
+    }
+  }
+}

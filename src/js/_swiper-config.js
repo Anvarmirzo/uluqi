@@ -33,11 +33,11 @@ let stuffSwiper = new Swiper('.staff .swiper-container', {
   loop: true,
   centerMode: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.staff .swiper-button-next',
+    prevEl: '.staff .swiper-button-prev',
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.staff .swiper-pagination',
     type: 'bullets',
   },
   breakpoints: {
@@ -58,11 +58,11 @@ let certificatesSwiper = new Swiper('.certificates .swiper-container', {
   loop: false,
   centerMode: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.certificates .swiper-button-next',
+    prevEl: '.certificates .swiper-button-prev',
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.certificates .swiper-pagination',
     type: 'bullets',
   },
   breakpoints: {
@@ -80,6 +80,62 @@ let certificatesSwiper = new Swiper('.certificates .swiper-container', {
     },
     1200: {
       slidesPerView: 3,
+    },
+  },
+});
+/* Certificates Swiper */
+let feedbackSwiper = new Swiper('.feedback .swiper-container', {
+  spaceBetween: 10,
+  loop: false,
+  centerMode: true,
+  navigation: {
+    nextEl: '.feedback .swiper-button-next',
+    prevEl: '.feedback .swiper-button-prev',
+  },
+  pagination: {
+    el: '.feedback .swiper-pagination',
+    type: 'bullets',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1,
+    },
+    991: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
+/* Partners Second Swiper */
+let partnersSecondSwiper = new Swiper('.partners-second .swiper-container', {
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  centerMode: true,
+  navigation: {
+    nextEl: '.feedback .swiper-button-next',
+    prevEl: '.feedback .swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 4,
     },
   },
 });

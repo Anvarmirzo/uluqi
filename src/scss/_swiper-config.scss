@@ -79,6 +79,55 @@
   }
 }
 
+.feedback {
+  .swiper-container {
+    padding-bottom: 30px;
+  }
+
+  .swiper-pagination {
+    opacity: 0;
+    visibility: hidden;
+
+    @include block_991 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &-bullet {
+      background-color: #2AD1AB;
+
+      &-active {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    opacity: 0;
+    visibility: hidden;
+
+    @include block_1199 {
+      opacity: 1;
+      visibility: visible;
+      z-index: 111;
+    }
+  }
+}
+
+.partners-second {
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .swiper-button-disabled {
   opacity: 0.2 !important;
+}
+
+.swiper-slide {
+  height: auto;
+  text-align: center;
 }
