@@ -767,6 +767,10 @@ section {
   margin-bottom: 10px;
 }
 
+.mt-76 {
+  margin-top: 76px;
+}
+
 .anim-arrow-right {
   position: relative;
 }
@@ -1024,6 +1028,20 @@ h2 {
   color: #FFFFFF;
 }
 
+.show-all-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 160%;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #18243E;
+}
+
 .catalog h2 {
   margin-bottom: 15px;
 }
@@ -1040,7 +1058,7 @@ h2 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: center;
-  padding: 16px 54px;
+  padding: 16px 17px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
