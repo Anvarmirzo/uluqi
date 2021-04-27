@@ -1017,12 +1017,13 @@ h2 {
 }
 
 .header {
-  overflow-x: hidden;
+  overflow: hidden;
+  position: relative;
 }
 
 .header::before {
   position: absolute;
-  top: 0;
+  top: -155px;
   left: -80px;
   content: 'U';
   font-weight: 900;
@@ -1172,6 +1173,31 @@ h2 {
   height: auto;
 }
 
+.staff .swiper-container {
+  padding-bottom: 40px;
+}
+
+.staff .swiper-slide {
+  background-color: #C4C4C4;
+  border-radius: 20px;
+}
+
+.staff .swiper-pagination {
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.staff .swiper-pagination-bullet {
+  background-color: #2AD1AB;
+}
+
+.staff .swiper-pagination-bullet-active {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
 .founder h2 {
   margin-bottom: 37px;
 }
@@ -1182,6 +1208,58 @@ h2 {
   line-height: 173%;
   color: #18243E;
   margin-bottom: 33px;
+}
+
+.staff h2 {
+  margin-bottom: 25px;
+}
+
+.staff p {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 152%;
+  color: #18243E;
+  margin-bottom: 29px;
+}
+
+.staff .price-btn {
+  margin-top: 51px;
+}
+
+.reduce {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.reduce::before {
+  position: absolute;
+  top: 0px;
+  left: -80px;
+  content: 'U';
+  font-weight: 900;
+  font-size: 660px;
+  line-height: 114%;
+  color: #2AD1AB;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.reduce h2 {
+  margin-bottom: 45px;
+}
+
+.reduce img {
+  margin-bottom: 14px;
+}
+
+.reduce p {
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 117%;
+  text-align: center;
+  color: #18243E;
 }
 
 @media (min-width: 576px) {
@@ -1940,6 +2018,11 @@ h2 {
     font-size: 16px;
   }
 
+  .staff .swiper-pagination {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .founder img {
     max-width: 231px;
     margin-bottom: 46px;
@@ -1952,6 +2035,24 @@ h2 {
   .founder p {
     font-size: 16px;
     text-align: left;
+  }
+
+  .staff h2 {
+    margin-bottom: 15px;
+  }
+
+  .staff p {
+    margin-bottom: 19px;
+    font-size: 16px;
+  }
+
+  .reduce h2 {
+    margin-bottom: 32px;
+  }
+
+  .reduce p {
+    font-size: 18px;
+    margin-bottom: 32px;
   }
 }
 

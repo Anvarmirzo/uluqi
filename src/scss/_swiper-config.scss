@@ -9,3 +9,33 @@
     height: auto;
   }
 }
+
+.staff {
+  .swiper-container {
+    padding-bottom: 40px;
+  }
+
+  .swiper-slide {
+    background-color: #C4C4C4;
+    border-radius: 20px;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    @include block_767 {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &-bullet {
+      background-color: #2AD1AB;
+
+      &-active {
+        transform: scale(1.5);
+      }
+    }
+  }
+}

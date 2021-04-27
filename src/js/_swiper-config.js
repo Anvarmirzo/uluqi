@@ -1,3 +1,4 @@
+/* Partner Swiper */
 let partnerSwiper = new Swiper('.partners-slider .swiper-container', {
   speed: 3000,
   freeMode: true,
@@ -23,6 +24,31 @@ let partnerSwiper = new Swiper('.partners-slider .swiper-container', {
     },
     1200: {
       slidesPerView: 7,
+    },
+  },
+});
+/* Stuff Swiper */
+let stuffSwiper = new Swiper('.staff .swiper-container', {
+  spaceBetween: 30,
+  loop: true,
+  centerMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
     },
   },
 });

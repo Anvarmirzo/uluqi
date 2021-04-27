@@ -1,0 +1,26 @@
+.staff {
+  h2 {
+    margin-bottom: 25px;
+
+    @include block_767 {
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 152%;
+    color: #18243E;
+    margin-bottom: 29px;
+
+    @include block_767 {
+      margin-bottom: 19px;
+      font-size: 16px;
+    }
+  }
+
+  .price-btn {
+    margin-top: 51px;
+  }
+}
