@@ -148,6 +148,12 @@ section {
     display: block;
 }
 
+.d-lg-none {
+    @include block_991 {
+        display: none;
+    }
+}
+
 .anim-arrow-right {
     position: relative;
 

@@ -39,6 +39,21 @@
   }
 }
 
+.arrow-top {
+  display: inline-block;
+  width: 16px;
+  height: 9px;
+  background-image: url(../img/icons/arrow-top.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include block_767 {
+    width: 16px;
+    height: 9px;
+  }
+}
+
 .burger-icon {
   display: inline-block;
   width: 21px;

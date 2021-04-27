@@ -11,10 +11,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include block_991 {
-    display: none;
-  }
-
   li {
     margin-right: 56px;
 
@@ -40,10 +36,6 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  @include block_991 {
-    display: none;
-  }
 
   .phone-num {
     display: flex;

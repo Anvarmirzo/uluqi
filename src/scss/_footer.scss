@@ -1,0 +1,26 @@
+.footer {
+
+  .header-nav,
+  .header-menu {
+    @include block_767 {
+      flex-direction: column;
+      align-items: stretch;
+
+      .logo-wrapper {
+        text-align: center;
+
+        @media (max-width: 480.98px) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      li {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 200%;
+        color: #18243E;
+      }
+    }
+  }
+}
