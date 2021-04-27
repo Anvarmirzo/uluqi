@@ -26,4 +26,8 @@
   line-height: 160%;
   text-decoration-line: underline;
   color: #18243E;
+
+  @include block_767 {
+    font-size: 16px;
+  }
 }

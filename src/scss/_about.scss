@@ -1,0 +1,26 @@
+.about {
+  &-item {
+    img {
+      margin-bottom: 13px;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 125%;
+    color: #18243E;
+
+    &.about__description {
+      margin-top: 73px;
+      font-size: 25px;
+      line-height: 152%;
+    }
+  }
+
+  span {
+    background-image: linear-gradient(180deg, #2AD1AB 62.5%, #6F72D9 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
