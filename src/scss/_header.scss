@@ -11,6 +11,7 @@
     line-height: 114%;
     color: #2AD1AB;
     opacity: 0.1;
+    z-index: -1;
   }
 
   @include block_767 {
