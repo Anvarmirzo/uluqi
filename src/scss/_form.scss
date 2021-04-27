@@ -1,0 +1,100 @@
+.form {
+  text-align: center;
+
+  &--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 53px;
+
+    .form-start,
+    .form-end {
+      width: 305px;
+      max-width: 305px;
+
+      select {
+        padding: 28px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url(../img/icons/select-arrow-down.svg);
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-position-y: 50%;
+        border-width: 0;
+        box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 21px;
+      }
+
+      input {
+        width: 100%;
+        padding: 28px;
+        border-width: 0;
+        box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+        &::placeholder {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .form-start {
+    margin-right: 40px;
+  }
+
+  .form-end {
+    input {
+      margin-bottom: 21px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: 25px;
+
+    @include block_767 {
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 152%;
+    color: #18243E;
+    margin-bottom: 45px;
+
+    @include block_767 {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+  }
+}
+
+.bg-logo {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    content: '';
+    z-index: -1;
+    background-image: url(../img/icons/uluqi-logo-large.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 613px;
+    height: 344px;
+
+    @include block_767 {}
+  }
+}

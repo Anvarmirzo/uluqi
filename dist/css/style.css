@@ -679,6 +679,26 @@ html {
   background-size: cover;
 }
 
+.mail-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/mail.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.location-icon {
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  background-image: url(../img/icons/map.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1373,8 +1393,199 @@ h2 {
   margin-bottom: 40px;
 }
 
+.bg-text {
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-text::before {
+  position: absolute;
+  top: 0px;
+  right: -30px;
+  content: 'U';
+  font-weight: 900;
+  font-size: 660px;
+  line-height: 114%;
+  color: #2AD1AB;
+  opacity: 0.1;
+  z-index: -1;
+}
+
 .partners-second h2 {
   margin-bottom: 33px;
+}
+
+.form {
+  text-align: center;
+}
+
+.form--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 53px;
+}
+
+.form--flex .form-start,
+.form--flex .form-end {
+  width: 305px;
+  max-width: 305px;
+}
+
+.form--flex .form-start select,
+.form--flex .form-end select {
+  padding: 28px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../img/icons/select-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 50%;
+  border-width: 0;
+  -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.form--flex .form-start input,
+.form--flex .form-end input {
+  width: 100%;
+  padding: 28px;
+  border-width: 0;
+  -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.form--flex .form-start input::-webkit-input-placeholder,
+.form--flex .form-end input::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.form--flex .form-start input::-moz-placeholder,
+.form--flex .form-end input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.form--flex .form-start input:-ms-input-placeholder,
+.form--flex .form-end input:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.form--flex .form-start input::-ms-input-placeholder,
+.form--flex .form-end input::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.form--flex .form-start input::placeholder,
+.form--flex .form-end input::placeholder {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.form .form-start {
+  margin-right: 40px;
+}
+
+.form .form-end input {
+  margin-bottom: 21px;
+}
+
+.form .form-end input:last-child {
+  margin-bottom: 0;
+}
+
+.form h2 {
+  margin-bottom: 25px;
+}
+
+.form p {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 152%;
+  color: #18243E;
+  margin-bottom: 45px;
+}
+
+.bg-logo {
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-logo::before {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  content: '';
+  z-index: -1;
+  background-image: url(../img/icons/uluqi-logo-large.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 613px;
+  height: 344px;
+}
+
+.contact h2 {
+  margin-bottom: 42px;
+}
+
+.contact-menu p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 150%;
+}
+
+.contact-menu p.fw-700 {
+  font-weight: 700;
+  font-size: 22px;
+  max-width: 245px;
+}
+
+.contact-menu__gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6F72D9), to(#2AD1AB));
+  background-image: -o-linear-gradient(top, #6F72D9 0%, #2AD1AB 100%);
+  background-image: linear-gradient(180deg, #6F72D9 0%, #2AD1AB 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-menu li {
+  margin-bottom: 48px;
+}
+
+.contact-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-menu a {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 75%;
+  color: #18243E;
+}
+
+.contact-menu .phone-icon,
+.contact-menu .mail-icon,
+.contact-menu .location-icon {
+  margin-right: 17px;
 }
 
 @media (min-width: 576px) {
@@ -1706,6 +1917,12 @@ h2 {
   .hidden-from-lg {
     display: none;
   }
+
+  .contact .ymaps-2-1-78-map.ymaps-2-1-78-i-ua_js_yes.ymaps-2-1-78-map-bg.ymaps-2-1-78-islets_map-lang-ru,
+  .contact .ymaps-2-1-78-map,
+  .contact .col-lg-8 > * {
+    height: 100% !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -2031,6 +2248,19 @@ h2 {
   .founder {
     text-align: center;
   }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact-menu {
+    margin-bottom: 42px;
+  }
+
+  .contact-menu p.fw-700 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2208,6 +2438,31 @@ h2 {
 
   .feedback h2 {
     margin-bottom: 15px;
+  }
+
+  .bg-text::before {
+    top: -100px;
+  }
+
+  .form h2 {
+    margin-bottom: 15px;
+  }
+
+  .form p {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .contact-menu p {
+    font-size: 20px;
+  }
+
+  .contact-menu p.fw-700 {
+    font-size: 18px;
+  }
+
+  .contact-menu a {
+    font-size: 18px;
   }
 }
 

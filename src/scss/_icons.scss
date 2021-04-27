@@ -48,3 +48,23 @@
   background-position: center center;
   background-size: cover;
 }
+
+.mail-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/mail.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.location-icon {
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  background-image: url(../img/icons/map.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
