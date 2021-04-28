@@ -1,8 +1,7 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
+$(document).ready(function () {
+  // 'use strict';
   ;
   /* Partner Swiper */
 
@@ -212,4 +211,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }, 600);
   });
   ;
+  ;
+  $('.subdivisions__content').hide().slice(0, 6).show();
+  $('.show-all-btn').on('click', function (e) {
+    e.preventDefault();
+    $('.subdivisions__content:hidden').slice(0, 4).slideDown();
+
+    if ($('.subdivisions__content:hidden').length == 0) {
+      $('.show-all-btn').text('').addClass('noContent');
+    }
+  });
 });
