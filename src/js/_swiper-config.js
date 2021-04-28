@@ -124,8 +124,8 @@ let partnersSecondSwiper = new Swiper('.partners-second .swiper-container', {
   },
   centerMode: true,
   navigation: {
-    nextEl: '.feedback .swiper-button-next',
-    prevEl: '.feedback .swiper-button-prev',
+    nextEl: '.partners-second .swiper-button-next',
+    prevEl: '.partners-second .swiper-button-prev',
   },
   breakpoints: {
     320: {

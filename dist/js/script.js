@@ -135,8 +135,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
     },
     centerMode: true,
     navigation: {
-      nextEl: '.feedback .swiper-button-next',
-      prevEl: '.feedback .swiper-button-prev'
+      nextEl: '.partners-second .swiper-button-next',
+      prevEl: '.partners-second .swiper-button-prev'
     },
     breakpoints: {
       320: {

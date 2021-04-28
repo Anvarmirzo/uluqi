@@ -17,8 +17,9 @@
   }
 
   .swiper-slide {
-    background-color: #C4C4C4;
-    border-radius: 20px;
+    img {
+      border-radius: 20px;
+    }
   }
 
   .swiper-pagination {
@@ -122,6 +123,14 @@
     align-items: center;
     justify-content: center;
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    @include block_767 {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
 }
 
 .swiper-button-disabled {
@@ -131,4 +140,10 @@
 .swiper-slide {
   height: auto;
   text-align: center;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  z-index: 111;
+  top: 45% !important;
 }
