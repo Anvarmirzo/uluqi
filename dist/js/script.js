@@ -223,11 +223,13 @@ $(document).ready(function () {
   ;
   /* MODALS */
 
-  var priceModal = document.querySelector('.price-modal-wrapper');
   var allModals = document.querySelectorAll('.modal-wrapper');
+  var priceModal = document.querySelector('.price-modal-wrapper');
+  var orderModal = document.querySelector('.order-modal-wrapper');
   /* MODAL BTNS */
 
   var showPriceBtn = document.querySelectorAll('.show-price');
+  var showOrderBtn = document.querySelectorAll('.show-order');
   /* MODAL CLOSE BTN*/
 
   var closeModal = document.querySelectorAll('.close-modal-btn');
@@ -235,9 +237,14 @@ $(document).ready(function () {
 
   showPriceBtn.forEach(function (element) {
     element.addEventListener('click', function (e) {
-      allModals.forEach(function (item) {
-        item.classList.add('modal-visible');
-      });
+      priceModal.classList.add('modal-visible');
+    });
+  });
+  /* SHOW ORDER OPEN EVENT */
+
+  showOrderBtn.forEach(function (element) {
+    element.addEventListener('click', function (e) {
+      orderModal.classList.add('modal-visible');
     });
   });
   /* MODAL CLOSE EVENT */
