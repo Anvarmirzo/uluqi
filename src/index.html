@@ -14,48 +14,51 @@
 
 <body>
     <!--! Header Navigation -->
-    <div class="container pt-42">
-        <nav class="header-nav">
-            <a href="##" class="logo-wrapper">
-                <img src="./img/sm-logo.png" alt="Uluqi plastics">
-            </a>
-            <ul class="header-menu d-lg-none">
-                <li><a href="##">Каталог</a></li>
-                <li><a href="##">О нас</a></li>
-                <li><a href="##">Команда</a></li>
-                <li><a href="##">Договор</a></li>
-                <li><a href="##">Партнеры</a></li>
-            </ul>
-            <ul class="lang-dropdown">
-                <li class="lang-dropdown__current">
-                    <a class="d-flex align-items-center" href="##">
-                        <span class="arrow-down me-5 mt-5"></span>рус</a>
-                    <ul class="lang-dropdown-list">
-                        <li>
-                            <a href="##">uz</a>
-                        </li>
-                        <li>
-                            <a href="##">eng</a>
-                        </li>
+    <div class="nav-wrapper" id="nav">
+        <div class="container py-21">
+            <nav class="header-nav">
+                <a href="/" class="logo-wrapper">
+                    <img src="./img/sm-logo.png" alt="Uluqi plastics">
+                </a>
+                <div class="links-container d-lg-none">
+                    <ul class="header-menu">
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#staff">Команда</a></li>
+                        <li><a href="#certificates">Договор</a></li>
+                        <li><a href="#partners">Партнеры</a></li>
                     </ul>
-                </li>
-                <button type="button" class="burger__btn ms-28">
-                    <span class="burger-icon"></span>
-                </button>
-
-            </ul>
-            <div class="phone-wrapper d-lg-none">
-                <span class="phone-icon me-49"></span>
-                <div class="phone-num">
-                    <a class="phone-num__link" href="tel:+998555000177">+998 55 500 01 77</a>
-                    <a class="phone-num__get" href="##">Заказать звонок</a>
                 </div>
-            </div>
-        </nav>
-    </div>
+                <ul class="lang-dropdown">
+                    <li class="lang-dropdown__current">
+                        <a class="d-flex align-items-center" href="##">
+                            <span class="arrow-down me-5 mt-5"></span>рус</a>
+                        <ul class="lang-dropdown-list">
+                            <li>
+                                <a href="##">uz</a>
+                            </li>
+                            <li>
+                                <a href="##">eng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <button type="button" class="burger__btn ms-28">
+                        <span class="burger-icon"></span>
+                    </button>
 
+                </ul>
+                <div class="phone-wrapper d-lg-none">
+                    <span class="phone-icon me-49"></span>
+                    <div class="phone-num">
+                        <a class="phone-num__link" href="tel:+998555000177">+998 55 500 01 77</a>
+                        <a class="phone-num__get" href="##">Заказать звонок</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
     <!-- ! Header -->
-    <header class="header">
+    <header class="header" id="home">
         <div class="container header__container">
             <div class="row">
                 <div class="col-lg-8">
@@ -83,7 +86,7 @@
     <!-- ! Content -->
     <main>
         <!-- ! Catalog -->
-        <section class="catalog">
+        <section class="catalog" id="catalog">
             <div class="container">
                 <h2>Каталог</h2>
                 <div class="row">
@@ -200,7 +203,7 @@
             </div>
         </section>
         <!-- ! Design -->
-        <section class="design">
+        <section class="design" id="design">
             <div class="container">
                 <h2>Дизайн логотипа для вашего бренда - бесплатно</h2>
                 <div class="row mt-53">
@@ -218,7 +221,7 @@
             </div>
         </section>
         <!-- ! About -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2>О компании</h2>
                 <!-- ? top image from 0 to 767px -->
@@ -289,7 +292,7 @@
             <button class="price-btn d-block mx-auto mt-74" type="button">Связаться с нами</button>
         </section>
         <!-- ! Cooperation -->
-        <section class="cooperation design">
+        <section class="cooperation design" id="cooperation">
             <div class="container">
                 <h2>Будем рады сотрудничеству с вами </h2>
                 <div class="row mt-53">
@@ -306,7 +309,7 @@
             </div>
         </section>
         <!-- ! Founder -->
-        <section class="founder">
+        <section class="founder" id="founder">
             <div class="container">
                 <h2>Улугбек Холматов – основатель компании Uluqi Plastics </h2>
                 <div class="row">
@@ -325,7 +328,7 @@
             </div>
         </section>
         <!-- ! Staff -->
-        <section class="staff">
+        <section class="staff" id="staff">
             <div class="container">
                 <h2>Наши сотрудники</h2>
                 <p>Мы – большая семья профессионалов, которые трудятся на благо своих клиентов</p>
@@ -348,7 +351,7 @@
             </div>
         </section>
         <!-- ! Reduce -->
-        <section class="reduce">
+        <section class="reduce" id="reduce">
             <div class="container">
                 <h2>Сократим ваши операционные расходы на 10% </h2>
                 <article class="reduce__item">
@@ -371,7 +374,7 @@
             </div>
         </section>
         <!-- ! Certificates -->
-        <section class="certificates">
+        <section class="certificates" id="certificates">
             <div class="container">
                 <h2>Сертификаты</h2>
                 <p class="mb-77">Используем только качественное сырьё, которое соответствует требованиям СЭС</p>
@@ -407,7 +410,7 @@
         </section>
         <div class="bg-text">
             <!-- ! Feedback -->
-            <section class="feedback">
+            <section class="feedback" id="feedback">
                 <div class="container">
                     <h2>Отзывы наших клиентов</h2>
                     <!-- Feedback Slider -->
@@ -432,7 +435,7 @@
                 </div>
             </section>
             <!-- ! Partners -->
-            <section class="partners-second">
+            <section class="partners-second" id="partners">
                 <h2>Наши партнеры</h2>
                 <div class="container">
                     <div class="swiper-container">
@@ -491,7 +494,7 @@
                 </div>
             </section>
             <!-- ! Contact -->
-            <div class="contact">
+            <section class="contact" id="contact">
                 <div class="container">
                     <h2>Контакты</h2>
                     <div class="row">
@@ -519,7 +522,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
     <!-- ! Footer -->
@@ -537,7 +540,7 @@
                     <li><a href="##">Договор</a></li>
                     <li><a href="##">Партнеры</a></li>
                 </ul>
-                <button class="to-top-btn" type="button"><span class="arrow-top"></span></button>
+                <a href="#home" class="to-top-btn" type="button"><span class="arrow-top"></span></a>
                 <div class="phone-wrapper d-lg-none">
                     <span class="phone-icon me-49"></span>
                     <div class="phone-num">

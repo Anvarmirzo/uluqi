@@ -164,5 +164,58 @@ document.addEventListener('DOMContentLoaded', function (event) {
       }
     }
   });
+  ; // ********** close links ************
+
+  var navToggle = document.querySelector('.burger__btn');
+  var linksContainer = document.querySelector('.links-container');
+  navToggle.addEventListener('click', function (e) {
+    linksContainer.classList.toggle('d-lg-none');
+
+    if (document.body.style.overflow == 'hidden') {
+      document.body.style.overflow = 'visible';
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
+  }); // ********** fixed navbar ************
+
+  var navbar = document.getElementById('nav');
+  window.addEventListener('scroll', function () {
+    var scrollHeight = window.pageYOffset;
+    var navHeight = navbar.getBoundingClientRect().height;
+
+    if (scrollHeight > navHeight) {
+      navbar.classList.add('fixed-nav');
+    } else {
+      navbar.classList.remove('fixed-nav');
+    }
+  }); // ********** smooth scroll ************
+  // select links
+
+  var scrollLinks = document.querySelectorAll('.header-menu li a');
+  scrollLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var id = e.currentTarget.getAttribute('href').slice(1);
+      var element = document.getElementById(id); // calculate the heights
+
+      var navHeight = navbar.getBoundingClientRect().height;
+      var containerHeight = linksContainer.getBoundingClientRect().height;
+      var fixedNav = navbar.classList.contains('fixed-nav');
+      var position = element.offsetTop - navHeight;
+
+      if (!fixedNav) {
+        position -= navHeight;
+      }
+
+      if (navHeight > 82) {
+        position += containerHeight;
+      }
+
+      window.scrollTo({
+        left: 0,
+        top: position
+      }); // linksContainer.style.height = 0;
+    });
+  });
   ;
 });

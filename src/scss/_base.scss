@@ -54,11 +54,13 @@ section {
     padding-bottom: 50px;
 }
 
-.pt-42 {
-    padding-top: 42px;
+.py-21 {
+    padding-top: 21px;
+    margin-bottom: 21px;
 
     @include block_991 {
         padding-top: 19px;
+        padding-bottom: 19px;
     }
 }
 

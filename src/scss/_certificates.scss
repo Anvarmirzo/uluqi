@@ -31,11 +31,11 @@
     }
 
     img {
-      box-shadow: 0 0 20px 5px #0000002e;
+      box-shadow: 0px 0px 28px 1px #00000026;
       margin-bottom: 23px;
 
       @include custom-media(400px) {
-        box-shadow: 0 0 5px 0px #000;
+        box-shadow: 0px 0px 5px 0px #00000026;
       }
     }
   }
