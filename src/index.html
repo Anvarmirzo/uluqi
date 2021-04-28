@@ -15,6 +15,21 @@
 </head>
 
 <body>
+    <!-- ! Modals -->
+    <div class="modal-wrapper price-modal-wrapper">
+        <button type="button" class="close-modal-btn">
+            <div class="close-icon"></div>
+        </button>
+        <article class="modal">
+            <h2>Получите расчет стоимости продукции за 5 минут</h2>
+            <form action="">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="tel" name="tel" placeholder="Номер телефона">
+                <button type="button" class="price-btn anim-arrow-right">Узнать цену <span
+                        class="arrow-right-icon"></span></button>
+            </form>
+        </article>
+    </div>
     <!--! Header Navigation -->
     <div class="nav-wrapper" id="nav">
         <div class="container py-21">
@@ -47,7 +62,6 @@
                     <button type="button" class="burger__btn ms-28">
                         <span class="burger-icon"></span>
                     </button>
-
                 </ul>
                 <div class="phone-wrapper d-lg-none">
                     <a href=""> <span class="tg-icon me-49"></span></a>
@@ -67,7 +81,7 @@
                     <h1>Производство <span class="gradient-text">полиэтиленовой продукции</span></h1>
                     <p>Заказывайте полиэтиленовую упаковку для своего товара всех видов, форм и размеров</p>
                     <div class="d-flex align-items-start hidden-to-lg">
-                        <button type="button" class="price-btn me-57 anim-arrow-right">Узнать цену <span
+                        <button type="button" class="price-btn me-57 anim-arrow-right show-price">Узнать цену <span
                                 class="arrow-right-icon"></span></button>
                         <p class="get-price">Получите расчет стоимости продукции за 5 минут</p>
                     </div>
@@ -92,7 +106,7 @@
             <div class="container">
                 <h2>Каталог</h2>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-1.png" alt="Мешки для эмульсии и травертина">
                             <div>
@@ -101,7 +115,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-2.png" alt="термоусадочная пленка">
                             <div>
@@ -110,7 +124,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-3.png" alt="пакет айген">
                             <div>
@@ -119,7 +133,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-4.png" alt="пакеты «майка»">
                             <div>
@@ -128,7 +142,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-5.png" alt="мусорные пакеты">
                             <div>
@@ -137,7 +151,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-6.png" alt="вакуумная пленка">
                             <div>
@@ -146,7 +160,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-7.png" alt="фасовочные пакеты">
                             <div>
@@ -155,7 +169,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-8.png" alt="накидки для сиденья">
                             <div>
@@ -164,7 +178,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-9.png" alt="полиэтиленовая пленка в рулоне">
                             <div>
@@ -173,7 +187,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-10.png" alt="мешки для химчисток">
                             <div>
@@ -182,7 +196,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-11.png" alt="полиэтиленовая пленка для теплиц">
                             <div>
@@ -191,7 +205,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 my-10 subdivisions__content">
+                    <div class="col-lg-4 col-sm-6 my-10">
                         <article class="catalog-item">
                             <img src="./img/products/p-12.png" alt="бахилы и полиэтиленовые фартуки">
                             <div>

@@ -7,6 +7,11 @@
     align-items: center;
     margin-bottom: 53px;
 
+    @include block_575 {
+      flex-direction: column;
+      margin-bottom: 35px;
+    }
+
     .form-start,
     .form-end {
       width: 305px;
@@ -25,6 +30,7 @@
         border-radius: 10px;
         width: 100%;
         margin-bottom: 21px;
+        background-color: #fff;
       }
 
       input {
@@ -38,6 +44,10 @@
           font-weight: 500;
           font-size: 20px;
           line-height: 20px;
+
+          @include block_575 {
+            font-size: 17px;
+          }
         }
       }
     }
@@ -45,6 +55,12 @@
 
   .form-start {
     margin-right: 40px;
+
+    @include block_575 {
+      margin-right: 0px;
+      margin-bottom: 18px;
+    }
+
   }
 
   .form-end {
@@ -85,7 +101,7 @@
 
   &::before {
     position: absolute;
-    bottom: 0px;
+    bottom: 39%;
     left: 0px;
     content: '';
     z-index: -1;
@@ -94,7 +110,5 @@
     background-position: center center;
     width: 613px;
     height: 344px;
-
-    @include block_767 {}
   }
 }
