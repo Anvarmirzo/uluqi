@@ -1,4 +1,19 @@
 .footer {
+  .header-menu {
+    li {
+      @include block_991 {
+        margin-right: 15px;
+      }
+
+      @include block_767 {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .header-nav {
+    position: relative;
+  }
 
   .header-nav,
   .header-menu {
@@ -21,6 +36,18 @@
         line-height: 200%;
         color: #18243E;
       }
+    }
+  }
+
+  .to-top-btn {
+    @include block_767 {
+      position: absolute;
+      top: 70px;
+      right: 0;
+    }
+
+    @include block_480 {
+      top: 40px;
     }
   }
 }

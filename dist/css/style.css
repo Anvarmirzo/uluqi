@@ -715,10 +715,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Gilroy', sans-serif;
 }
@@ -945,6 +941,14 @@ section {
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+.header-menu li a.active {
+  background-image: -o-linear-gradient(343.41deg, #6F72D9 2.24%, #2AD1AB 89.64%);
+  background-image: linear-gradient(106.59deg, #6F72D9 2.24%, #2AD1AB 89.64%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .phone-wrapper {
@@ -1631,6 +1635,10 @@ h2 {
 .contact-menu .mail-icon,
 .contact-menu .location-icon {
   margin-right: 17px;
+}
+
+.footer .header-nav {
+  position: relative;
 }
 
 @media (min-width: 576px) {
@@ -2340,6 +2348,10 @@ h2 {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .footer .header-menu li {
+    margin-right: 15px;
+  }
 }
 
 @media (max-width: 991.98px) and (max-width: 480.98px) {
@@ -2555,6 +2567,10 @@ h2 {
     font-size: 18px;
   }
 
+  .footer .header-menu li {
+    margin-right: 0;
+  }
+
   .footer .header-nav,
   .footer .header-menu {
     -webkit-box-orient: vertical;
@@ -2578,6 +2594,12 @@ h2 {
     line-height: 200%;
     color: #18243E;
   }
+
+  .footer .to-top-btn {
+    position: absolute;
+    top: 70px;
+    right: 0;
+  }
 }
 
 @media (max-width: 767.98px) and (max-width: 480.98px) {
@@ -2585,6 +2607,12 @@ h2 {
   .footer .header-menu .logo-wrapper {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact .col-lg-8 > * {
+    height: 243px !important;
   }
 }
 
@@ -2609,6 +2637,10 @@ h2 {
 
   .design-end--flex img {
     max-width: 74%;
+  }
+
+  .footer .to-top-btn {
+    top: 40px;
   }
 }
 

@@ -2,20 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function (event) {
   'use strict';
-  /* function testWebP(callback) {
-  var webP = new Image();
-  webP.onload = webP.onerror = function () {
-  callback(webP.height == 2);
-  };
-  webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-  }
-  testWebP(function (support) {
-  if (support == true) {
-  document.querySelector('body').classList.add('webp');
-  }else{
-  document.querySelector('body').classList.add('no-webp');
-  }
-  });*/
 
   ;
   /* Partner Swiper */
@@ -189,33 +175,41 @@ document.addEventListener('DOMContentLoaded', function (event) {
       navbar.classList.remove('fixed-nav');
     }
   }); // ********** smooth scroll ************
-  // select links
 
-  var scrollLinks = document.querySelectorAll('.header-menu li a');
-  scrollLinks.forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      var id = e.currentTarget.getAttribute('href').slice(1);
-      var element = document.getElementById(id); // calculate the heights
+  $(window).on('scroll', function scrolled() {
+    var scroll = $(this).scrollTop();
+    $('.header-top-menu a').each(function () {
+      var attr = $(this).attr('href');
+      var position = $(attr).offset().top - 120;
 
-      var navHeight = navbar.getBoundingClientRect().height;
-      var containerHeight = linksContainer.getBoundingClientRect().height;
-      var fixedNav = navbar.classList.contains('fixed-nav');
-      var position = element.offsetTop - navHeight;
-
-      if (!fixedNav) {
-        position -= navHeight;
+      if (scroll >= position) {
+        $('.header-top-menu a').removeClass('active');
+        $(this).addClass('active');
       }
-
-      if (navHeight > 82) {
-        position += containerHeight;
-      }
-
-      window.scrollTo({
-        left: 0,
-        top: position
-      }); // linksContainer.style.height = 0;
     });
+  });
+  $('.header-top-menu a').click(function (e) {
+    e.preventDefault();
+    $('html').animate({
+      scrollTop: $($(this).addClass('active').attr('href')).offset().top - $('#nav').innerHeight()
+    }, 800);
+    $('.header-top-menu a').removeClass('active');
+  });
+  $('.header-bottom-menu').on('click', 'a', function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 800);
+  });
+  $('.to-top-btn').on('click', function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 600);
   });
   ;
 });

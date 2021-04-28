@@ -76,4 +76,10 @@
       height: 100% !important;
     }
   }
+
+  .col-lg-8>* {
+    @include block_575 {
+      height: 243px !important;
+    }
+  }
 }
