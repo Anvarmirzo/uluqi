@@ -62,6 +62,20 @@
             </form>
         </article>
     </div>
+    <!-- Contact Modal -->
+    <div class="modal-wrapper contact-modal-wrapper">
+        <button type="button" class="close-modal-btn">
+            <div class="close-icon"></div>
+        </button>
+        <article class="modal">
+            <h2>Заполните форму ниже</h2>
+            <form action="">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="tel" name="tel" placeholder="Номер телефона">
+                <button type="button" class="price-btn">Заказать</button>
+            </form>
+        </article>
+    </div>
 
     <!--! Header Navigation -->
     <div class="nav-wrapper" id="nav">
@@ -260,11 +274,11 @@
                         <p class="mb-41">Печать логотипа на упаковке обеспечит рост продаж и узнаваемость бренда.
                             Бесплатно
                             разработаем логотип для вашей компании.</p>
-                        <button type="button" class="price-btn hidden-to-lg">Заказать</button>
+                        <button type="button" class="price-btn hidden-to-lg show-order">Заказать</button>
                     </div>
                     <div class="col-lg-5 design-end--flex">
                         <img src="./img/uluqi_paket.png" alt="Uluqi plastics">
-                        <button type="button" class="price-btn hidden-from-lg">Заказать</button>
+                        <button type="button" class="price-btn hidden-from-lg show-order">Заказать</button>
                     </div>
                 </div>
             </div>
@@ -338,7 +352,7 @@
                     </div>
                 </div>
             </div>
-            <button class="price-btn d-block mx-auto mt-74" type="button">Связаться с нами</button>
+            <button class="price-btn d-block mx-auto mt-74 show-contact" type="button">Связаться с нами</button>
         </section>
         <!-- ! Cooperation -->
         <section class="cooperation design" id="cooperation">

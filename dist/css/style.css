@@ -1722,6 +1722,10 @@ h2 {
   height: 0;
 }
 
+.modal-wrapper button {
+  outline: none;
+}
+
 .modal-wrapper.modal-visible {
   width: 100%;
   height: 100%;

@@ -226,18 +226,24 @@ $(document).ready(function () {
   var allModals = document.querySelectorAll('.modal-wrapper');
   var priceModal = document.querySelector('.price-modal-wrapper');
   var orderModal = document.querySelector('.order-modal-wrapper');
+  var contactModal = document.querySelector('.contact-modal-wrapper');
   /* MODAL BTNS */
 
   var showPriceBtn = document.querySelectorAll('.show-price');
   var showOrderBtn = document.querySelectorAll('.show-order');
+  var showContactBtn = document.querySelectorAll('.show-contact');
   /* MODAL CLOSE BTN*/
 
   var closeModal = document.querySelectorAll('.close-modal-btn');
+  /* GLOBAL ELEMENTS */
+
+  var bodyStyle = document.body.style;
   /* SHOW PRICE OPEN EVENT */
 
   showPriceBtn.forEach(function (element) {
     element.addEventListener('click', function (e) {
       priceModal.classList.add('modal-visible');
+      bodyStyle.overflow = 'hidden';
     });
   });
   /* SHOW ORDER OPEN EVENT */
@@ -245,6 +251,15 @@ $(document).ready(function () {
   showOrderBtn.forEach(function (element) {
     element.addEventListener('click', function (e) {
       orderModal.classList.add('modal-visible');
+      bodyStyle.overflow = 'hidden';
+    });
+  });
+  /* SHOW CONTACT OPEN EVENT */
+
+  showContactBtn.forEach(function (element) {
+    element.addEventListener('click', function (e) {
+      contactModal.classList.add('modal-visible');
+      bodyStyle.overflow = 'hidden';
     });
   });
   /* MODAL CLOSE EVENT */
@@ -253,6 +268,7 @@ $(document).ready(function () {
     element.addEventListener('click', function (e) {
       allModals.forEach(function (item) {
         item.classList.remove('modal-visible');
+        bodyStyle.overflow = 'initial';
       });
     });
   });
