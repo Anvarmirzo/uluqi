@@ -1,9 +1,11 @@
 // ********** close links ************
 const navToggle = document.querySelector('.burger__btn');
 const linksContainer = document.querySelector('.links-container');
+const phoneContainer = document.querySelector('.phone-wrapper');
 
 navToggle.addEventListener('click', function (e) {
   linksContainer.classList.toggle('d-lg-none');
+  phoneContainer.classList.toggle('d-lg-none');
   if (document.body.style.overflow == 'hidden') {
     document.body.style.overflow = 'visible';
   } else {

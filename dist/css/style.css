@@ -2472,6 +2472,22 @@ h2 {
     margin-right: 0px;
   }
 
+  .phone-wrapper {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    z-index: 111111;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .phone-wrapper .phone-num {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .lang-dropdown {
     display: -webkit-box;
     display: -ms-flexbox;

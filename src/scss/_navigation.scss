@@ -48,10 +48,22 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @include block_991 {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    z-index: 111111;
+    transform: translateX(-50%);
+  }
+
   .phone-num {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @include block_991 {
+      align-items: center;
+    }
 
     &__link {
       font-weight: bold;
