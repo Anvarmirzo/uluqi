@@ -39,6 +39,10 @@ $(document).ready(function () {
     spaceBetween: 30,
     loop: true,
     centerMode: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+    },
     navigation: {
       nextEl: '.staff .swiper-button-next',
       prevEl: '.staff .swiper-button-prev'

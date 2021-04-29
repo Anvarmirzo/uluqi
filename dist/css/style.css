@@ -1393,7 +1393,7 @@ h2 {
 }
 
 .swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
+.swiper-button-prev {
   z-index: 111;
   top: 45% !important;
 }
