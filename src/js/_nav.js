@@ -57,6 +57,12 @@ $('.header-bottom-menu').on('click', 'a', function (event) {
     top = $(id).offset().top;
   $('body,html').animate({ scrollTop: top }, 800);
 });
+$('.to-form-btn').on('click', function (event) {
+  event.preventDefault();
+  var id = $(this).attr('href'),
+    top = $(id).offset().top - 90;
+  $('body,html').animate({ scrollTop: top }, 800);
+});
 $('.to-top-btn').on('click', function (event) {
   event.preventDefault();
   var id = $(this).attr('href'),

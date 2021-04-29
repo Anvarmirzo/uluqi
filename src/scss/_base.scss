@@ -235,6 +235,10 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
+.w-maxc {
+    width: max-content;
+}
+
 .hidden-to-lg {
     @include block_991 {
         display: none;

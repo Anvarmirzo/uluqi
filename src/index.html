@@ -42,22 +42,7 @@
             <form action="">
                 <input type="text" name="name" placeholder="Имя">
                 <input type="tel" name="tel" placeholder="Номер телефона">
-                <select>
-                    <option value="Продукция" hidden>Продукция</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="14">13</option>
-                </select>
+                <input type="text" name="company" placeholder="Название компании">
                 <button type="button" class="price-btn">Заказать</button>
             </form>
         </article>
@@ -115,7 +100,6 @@
                     <a class="hidden-to-lg" href=""> <span class="tg-icon me-49"></span></a>
                     <div class="phone-num">
                         <a class="phone-num__link" href="tel:+998555000177">+998 55 500 01 77</a>
-                        <a class="phone-num__get" href="##">Заказать звонок</a>
                     </div>
                 </div>
             </nav>
@@ -353,7 +337,7 @@
                     </div>
                 </div>
             </div>
-            <button class="price-btn d-block mx-auto mt-74 show-contact" type="button">Связаться с нами</button>
+            <a href="#form-section" class="price-btn d-block mx-auto mt-74 w-maxc to-form-btn">Связаться с нами</a>
         </section>
         <!-- ! Cooperation -->
         <section class="cooperation design" id="cooperation">
@@ -411,7 +395,8 @@
                     <!-- Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
-                <button class="price-btn d-block mx-auto show-contact" type="button">Позвонить нам</button>
+                <a href="#form-section" class="price-btn d-block mx-auto w-maxc to-form-btn" type="button">Позвонить
+                    нам</a>
             </div>
         </section>
         <!-- ! Reduce -->
@@ -532,7 +517,7 @@
         </div>
         <div class="bg-logo">
             <!-- ! Form -->
-            <section class="form">
+            <section class="form" id="form-section">
                 <div class="container">
                     <h2>Свяжитесь с нами</h2>
                     <p>Заполните форму, и наши менеджеры подберут для вас нужную упаковку:</p>
@@ -541,19 +526,21 @@
                             <div class="form-start">
                                 <select>
                                     <option value="Продукция" hidden>Продукция</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="14">13</option>
+                                    <option value="мешки для эмульсии и травертина">мешки для эмульсии и травертина
+                                    </option>
+                                    <option value="термоусадочная пленка">термоусадочная пленка</option>
+                                    <option value="пакет айген">пакет айген</option>
+                                    <option value="пакеты «майка»">пакеты «майка»</option>
+                                    <option value="мусорные пакеты">мусорные пакеты</option>
+                                    <option value="вакуумная пленка">вакуумная пленка</option>
+                                    <option value="фасовочные пакеты">фасовочные пакеты</option>
+                                    <option value="накидки для сиденья">накидки для сиденья</option>
+                                    <option value="полиэтиленовая пленка в рулоне">полиэтиленовая пленка в рулоне
+                                    </option>
+                                    <option value="мешки для химчисток">мешки для химчисток</option>
+                                    <option value="полиэтиленовая пленка для теплиц">полиэтиленовая пленка для теплиц
+                                    </option>
+                                    <option value="бахилы">бахилы</option>
                                 </select>
                                 <input name="weight" type="number" placeholder="Количество (кг.)">
                             </div>
@@ -618,7 +605,6 @@
                     <span class="phone-icon me-49"></span>
                     <div class="phone-num">
                         <a class="phone-num__link" href="tel:+998555000177">+998 55 500 01 77</a>
-                        <a class="phone-num__get" href="##">Заказать звонок</a>
                     </div>
                 </div>
             </nav>

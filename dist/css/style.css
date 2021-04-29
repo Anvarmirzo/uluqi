@@ -917,6 +917,12 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+.w-maxc {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
