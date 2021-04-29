@@ -5,4 +5,5 @@ $(document).ready(function () {
   @@include('_nav.js');
   @@include('_load-more.js');
   @@include('_modal.js');
+  @@include('_aos-init.js');
 });
