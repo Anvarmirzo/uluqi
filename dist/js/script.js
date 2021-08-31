@@ -241,6 +241,7 @@ $(document).ready(function () {
   var priceModal = document.querySelector('.price-modal-wrapper');
   var orderModal = document.querySelector('.order-modal-wrapper');
   var contactModal = document.querySelector('.contact-modal-wrapper');
+  var goToPage = document.querySelector('.go-to-page');
   /* MODAL BTNS */
 
   var showPriceBtn = document.querySelectorAll('.show-price');
@@ -286,6 +287,7 @@ $(document).ready(function () {
       });
     });
   });
+  goToPage.classList.add('modal-visible');
   ;
   AOS.init({
     once: true,

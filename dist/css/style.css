@@ -1204,6 +1204,15 @@ h2 {
   background-color: transparent;
 }
 
+.go-to-link {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.go-to-link:hover {
+  color: #408f87;
+}
+
 .catalog h2 {
   margin-bottom: 15px;
 }
